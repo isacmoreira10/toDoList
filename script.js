@@ -17,7 +17,7 @@ function show() {
     for (let i = 0; i < array.length; i++) {
         const htmlElement = `<div class="display" id="display">
         <p class="list">${array[i].task} </p>
-        <button onclick="clean()" class="button">
+        <button onclick="hanldeRemoveTask(${i})" class="button">
         <img src="icons8-trash-bin-50 (1).png" class="image"></button><hr>
         </div>`
         string += htmlElement
