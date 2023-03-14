@@ -15,6 +15,8 @@ function add() {
 function show() {
     let string = ''
     for (let i = 0; i < array.length; i++) {
+        if (i === 8) { alert("type it only eitgth tasks"); break }
+        if (task.value === '') { alert("type it a task"); break }
         const htmlElement = `<div class="display" id="display">
         <p class="list">${array[i].task} </p>
         <button onclick="hanldeRemoveTask(${i})" class="button">
