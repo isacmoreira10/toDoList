@@ -124,4 +124,5 @@ hr {
     border: 0.655172px solid rgba(0, 0, 0, 0.13);
     border-right: 0.655172px solid rgba(0, 0, 0, 0.13);
     box-shadow: 10px 6.55172px 32.7586px 4.27586px rgba(0, 0, 0.10, 0.60);
+    text-transform: capitalize;
 }
