@@ -1,7 +1,6 @@
 let baseboard = document.querySelector('#baseBoard')
 let task = document.querySelector('#task')
 let array = []
-let divs = []
 
 
 function add() {
@@ -23,17 +22,19 @@ function show() {
         </div>`
         string += htmlElement
     }
-    divs.push(string)
     baseboard.innerHTML = string
 
 }
 
-function clean() {
-    const findDiv = (Element) => Element
-    console.log(divs.findIndex(findDiv))
-
-
+function handleRemoveTask(index) {
+       const newTasks = array.filter((task, taskIndex) => index !== taskIndex)
+       array = newTasks
+       show()
 }
+
+
+
+
 
 
 
